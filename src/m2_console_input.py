@@ -3,9 +3,10 @@ This module demonstrates lets you practice INPUT from the CONSOLE.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Zachary Juday.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
+import math
 
 def main():
     """ TESTs the functions in this module (by calling them). """
@@ -34,6 +35,10 @@ def double_a_float():
     # TODO: 2. Implement and test this function.
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
+
+    x = float(input('input a floating number:'))
+    y = x*2
+    print(str(y))
 
 
 def print_an_integer_many_times():
@@ -66,6 +71,10 @@ def print_an_integer_many_times():
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
 
+    x = int(input('Please input an integer:'))
+    y = x*2
+    for _ in range(x):
+        print(str(y))
 
 def print_an_integer_many_times_on_one_row():
     """
@@ -88,6 +97,12 @@ def print_an_integer_many_times_on_one_row():
     #       and then print that (single) string.
     # -------------------------------------------------------------------------
 
+    x = int(input('please input an integer:'))
+    y = x*2
+    s = ''
+    for _ in range(x):
+        s += str(y)
+    print(str(s))
 
 def input_it_all():
     """
@@ -125,6 +140,14 @@ def input_it_all():
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
 
+    x = float(input('Enter a positive floating point number:'))
+    y = int(input('Enter a positive integer:'))
+    z = str(input('Enter a string:'))
+    a = math.sqrt(x)
+    for _ in range(y):
+        print(a)
+    for _ in range(y):
+        print(str(z))
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
